@@ -1,16 +1,16 @@
 #include <stdio.h>
-#include <stdlib.h>
-/* more headers goes there */
-/* betty style doc for function main goes there */
+/**
+ * main - prints the lowercase alphabet in reverse
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-char c='z';
-while(c>='a')
-{	
+char c;
+for (c = 'z'; c >= 'a'; c--)
+{
 putchar(c);
-c--;
 }
 putchar('\n');
 return (0);
 }
-
